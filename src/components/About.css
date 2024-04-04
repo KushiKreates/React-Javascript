@@ -1,0 +1,412 @@
+.text-group {
+  flex: 6; /* Adjust the flex value to allocate more space to the text group */
+  align-items: center;
+}
+
+
+  /* components/AboutMe.css */
+  .middle-section {
+    background-color: transparent; /* Transparent white color */
+    padding: 20px; /* Add padding for better readability */
+  }
+
+
+/* Ignore*/
+
+/* About.css */
+
+/* About.css */
+
+.about-section {
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  margin-top: 0;
+}
+
+.about-section .content {
+  display: flex;
+  align-items: center;
+}
+
+.text-group {
+  flex: 6; /* Adjust the flex value to allocate more space to the text group */
+  align-items: center;
+}
+
+
+.text-groups {
+  position: relative;
+  left: 90px;
+}
+
+.full-image {
+  width: 100%; /* Adjust image width to fit the container */
+  max-width: 500px; /* Set maximum width for larger screens */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin-right: auto; /* Align the image to the right */
+  margin-top: -250px;
+  z-index: 1; /* Align the image to the top */
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.python-image,
+.nodejs-image {
+  width: 50px; /* Adjust image size for smaller screens */
+  margin-right: 20px; /* Add some spacing between the images */
+}
+
+.sub-image {
+  width: 100%; /* Adjust image width to fit the container */
+  max-width: 500px; /* Set maximum width for larger screens */
+  margin-right: auto; /* Align image to the right */
+}
+
+.text-group p {
+  margin-top: 0; /* Remove top margin of the paragraph */
+  max-width: 100%; /* Set the maximum width of the paragraph */
+  white-space: pre-wrap; /* Allow the text to wrap */
+}
+
+.spacing {
+  height: 20px; /* Adjust the height as needed */
+}
+
+.spacingbig {
+  height: 180px; /* Adjust the height as needed */
+}
+
+.gradient-text {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: text; /* Webkit-based browsers */
+  background-clip: text; /* Standard */
+  color: transparent; /* Hide the text */
+}
+
+.full-image {
+  position: relative;
+  top: -500px;
+  left: 1050px; /* Center the image horizontally */
+   /* Center the image horizontally and apply rotation */
+  width: 300%; /* Adjust width to fit the container */
+  max-width: 600px; /* Set maximum width for larger screens */
+  height: auto; /* Automatically adjust height */
+
+}
+.sub-text {
+  font-size: 26px; /* Increase font size */
+  color: white; /* Set color to white */
+  font-family: 'Roboto', sans-serif; /* Set font to Roboto from Google Fonts */
+}
+
+.rgb-text {
+  font-size: 46px; /* Increase font size */
+  animation: rgb-fan 5s infinite, dance 2s infinite alternate; /* Apply both animations */
+}
+
+@keyframes rgb-fan {
+  0% { color: rgb(255, 0, 0); } /* Start with red */
+  25% { color: rgb(0, 255, 0); } /* Transition to green at 25% */
+  50% { color: rgb(0, 0, 255); } /* Transition to blue at 50% */
+  75% { color: rgb(255, 255, 0); } /* Transition to yellow at 75% */
+  100% { color: rgb(255, 0, 255); } /* Transition back to red at 100% */
+}
+
+@keyframes dance {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-10px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-image {
+  position: relative;
+  top: -300px;
+  left: 550px; /* Center the image horizontally */
+  transform: translateX(-50%) rotate(20deg); /* Center the image horizontally and apply rotation */
+  width: 0%; /* Adjust width to fit the container */
+  max-width: 400px; /* Set maximum width for larger screens */
+  height: auto; /* Automatically adjust height */
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.custom-image:hover {
+  transform: scale(1.05);
+}
+
+.youtube-image {
+  position: relative;
+  top: -200px;
+  left: 450px; /* Center the image horizontally */
+  transform: translateX(-50%) rotate(-20deg); /* Center the image horizontally and apply rotation */
+  width: 100%; /* Adjust width to fit the container */
+  max-width: 200px; /* Set maximum width for larger screens */
+  height: auto; /* Automatically adjust height */
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.youtube-image:hover {
+  transform: scale(1.05);
+}
+
+.dc-image {
+  position: relative;
+  top: -120px;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%) rotate(-20deg); /* Center the image horizontally and apply rotation */
+  width: 100%; /* Adjust width to fit the container */
+  max-width: 100px; /* Set maximum width for larger screens */
+  height: auto; /* Automatically adjust height */
+}
+
+.bold-text {
+  font-weight: bold;
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  flex: 6;
+  align-items: center;
+  animation: rgb-fan 10s infinite;
+  
+}
+
+.bold-text:hover {
+  transform: scale(1.02); /* Scale the element larger on hover */
+}
+
+.full-image:hover {
+  transform: scale(1.1); /* Scale the element larger on hover */
+}
+
+.big-text {
+  font-size: 80px;
+  line-height: 1.6;
+  animation: rgb-fan 5s infinite;
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #FF6B6B, #ffffff);
+  border-color: #ffffff;
+}
+
+.pink-gradient {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cool-button,
+.cool2-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid white;
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove default underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  transition-duration: 0.4s; /* Transition duration */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 30px; /* Rounded corners */
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.cool-button:hover,
+.cool2-button:hover {
+  transform: scale(1.05); /* Scale the button on hover */
+  background-color: red; /* Pink background on hover */
+}
+
+/* Mobile-specific styles */
+.mobile .about-section {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mobile .about-section h2 {
+  margin-top: 0;
+}
+
+.mobile .about-section .content {
+  display: block;
+  text-align: center;
+}
+
+.mobile .text-group {
+  flex: none;
+  align-items: center;
+}
+
+.mobile .text-groups {
+  position: static;
+  left: auto;
+}
+
+.mobile .full-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-right: auto;
+  margin-top: 0; /* Updated margin-top for mobile */
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.mobile .python-image,
+.mobile .nodejs-image {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.mobile .sub-image {
+  width: 100%;
+  max-width: 500px;
+  margin-right: auto;
+}
+
+.mobile .text-group p {
+  margin-top: 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  font-size: 16px;
+}
+
+.mobile .spacing {
+  height: 10px;
+}
+
+.mobile .spacingbig {
+  height: 80px;
+}
+
+.mobile .gradient-text {
+  background: linear-gradient(45deg, #FF6B6B, #d3e0ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mobile .sub-text {
+  font-size: 24px;
+  color: white;
+}
+
+.mobile .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile .custom-image,
+.mobile .youtube-image,
+.mobile .dc-image {
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.mobile .custom-image:hover,
+.mobile .youtube-image:hover,
+.mobile .dc-image:hover {
+  transform: scale(1.05);
+}
+
+.mobile .bold-text {
+  font-weight: bold;
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.mobile .bold-text:hover {
+  transform: scale(1.02);
+}
+
+.mobile .full-image:hover {
+  transform: scale(1.1);
+}
+
+.mobile .big-text {
+  font-size: 48px;
+  line-height: 1.3;
+  color: white;
+  position: relative;
+}
+
+.mobile .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile .button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.mobile .button:hover {
+  background: linear-gradient(45deg, #FF6B6B, #ffffff);
+  border-color: #ffffff;
+}
+
+.mobile .pink-gradient {
+  background: linear-gradient(45deg, #FF6B6B, #ffffff);
+}
+
+.mobile .cool-button,
+.mobile .cool2-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.mobile .cool-button:hover,
+.mobile .cool2-button:hover {
+  transform: scale(1.05);
+  background-color: red;
+}

@@ -1,0 +1,62 @@
+/* components/Header.css */
+.header {
+  background: transparent; /* Purple to blue gradient */
+  color: white;
+  padding: 0px 0px;
+  
+}
+
+.header-content {
+  max-width: 200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Adjusted to move logo to left and nav links to right */
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  
+  left: -1px;/* Move the logo to the leftmost position */
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Move nav links to the right */
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.nav-links a::after {
+  content: '👆'; /* Unicode for the arrow symbol */
+  position: absolute;
+  bottom: 0px; /* Adjust the position of the arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px; /* Adjust the size of the arrow */
+  transition: transform 0.3s ease; /* Add transition for sliding effect */
+  opacity: 0; /* Initially hidden */
+}
+
+.nav-links a:hover::after {
+  transform: translateX(-50%) translateY(-5px); /* Move the arrow up slightly */
+  opacity: 1; /* Make the arrow visible */
+  color: #FFC0CB; /* Optionally change color on hover */
+}

@@ -1,0 +1,74 @@
+/* Add spacing from the top */
+.app {
+  padding-top: 20px;
+}
+
+/* Set background image with linear gradient */
+body {
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-size: cover;
+}
+
+/* Footer component styling */
+.footer {
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer leaderboard section styling */
+.leaderboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Footer leaderboard entry styling */
+.stat {
+  padding: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  animation: pulse 1s infinite;
+}
+
+/* Footer leaderboard entry text styling */
+.stat p {
+  margin: 0;
+  animation: colorChange 1s infinite alternate;
+}
+
+/* Animation for pulsing effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation for color change */
+@keyframes colorChange {
+  0% {
+    color: #ffc107; /* Yellow color */
+  }
+  50% {
+    color: #ff5722; /* Orange color */
+  }
+  100% {
+    color: #ffc107; /* Yellow color */
+  }
+}
+
+/* Copyright notice */
+.footer::after {
+  content: "Copyright 2024 Kushi_k";
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
